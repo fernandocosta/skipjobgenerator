@@ -2,7 +2,12 @@
   body {
     background: #2f343d
   }
-
+  h1{
+    visibility: hidden;
+  }
+  .footer{
+    visibility: hidden;
+  }
   .bubble {
     background: white;
     color: white;
@@ -85,9 +90,6 @@ font-family:
 font-size:
 14px
 ;
-height:
-20px
-;
 line-height:
 20px
 ;
@@ -153,9 +155,6 @@ text
 ;
 vertical-align:
 baseline
-;
-width:
-403px
 ;
 -webkit-box-direction:
 normal
@@ -277,7 +276,7 @@ normal
 </style>
 <div class="bubble">
     <div class="texxt">
-    <a class="mention-link" id = 'nickname' title=""></a>
+    <a class="mention-link" id = 'nickname' title="" style="color:rgba(29, 116, 245, 0.2);"></a>
       <span id ='message'></span>
     </div>
   </div>
