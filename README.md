@@ -3,7 +3,7 @@
     background: #2f343d
   }
 
-  section {
+  .bubble {
     background: white;
     color: white;
     border-radius: 8px;
@@ -275,12 +275,12 @@ normal
     -webkit-f
   }
 </style>
-<section>
+<div class="bubble">
     <div class="texxt">
-    <a class="mention-link" data-username="vega" id = 'nickname' title=""></a>
+    <a class="mention-link" id = 'nickname' title=""></a>
       <span id ='message'></span>
     </div>
-</section>
+  </div>
 <script>
   var reasons = [
     'Отсутствую по причине болезни',
@@ -295,5 +295,5 @@ normal
   var month = date.getMonth()>=10 ? date.getMonth():'0'+date.getMonth();
   var reason = reasons[Math.floor(Math.random()*reasons.length)];
 document.querySelector('#message').innerHTML = day+'/'+month+' '+reason;
-document.querySelector('#nickname').innerHTML = location.hash;
+document.querySelector('#nickname').innerHTML = location.hash.replace('#','@');
 </script>
