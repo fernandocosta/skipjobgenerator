@@ -276,7 +276,7 @@ normal
 </style>
 <div class="bubble">
     <div class="texxt">
-    <a class="mention-link" id = 'nickname' title="" style="color:rgba(29, 116, 245, 0.2);"></a>
+    <a class="mention-link" id = 'nickname' title="" style="color:rgba(29, 116, 245, 0.7);"></a>
       <span id ='message'></span>
     </div>
   </div>
