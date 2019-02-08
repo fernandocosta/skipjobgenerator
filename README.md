@@ -291,7 +291,7 @@ normal
   ];
   var date = new Date();
   var day = date.getDate()>=10 ? date.getDate():'0'+date.getDate();
-  var month = date.getMonth()>=10 ? date.getMonth():'0'+date.getMonth();
+  var month = date.getMonth()>=10 ? (date.getMonth()+1):'0'+(date.getMonth()+1);
   var reason = reasons[Math.floor(Math.random()*reasons.length)];
 document.querySelector('#message').innerHTML = day+'/'+month+' '+reason;
 document.querySelector('#nickname').innerHTML = location.hash.replace('#','@');
